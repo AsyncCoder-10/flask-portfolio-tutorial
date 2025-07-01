@@ -25,7 +25,6 @@ JSON or database-driven dynamic content
 
 Modular code and static file management
 
-Folder Structure
 ![alt text](/personal-portfolio//app/static/images/image.png)
 
 📬 Contact
