@@ -28,15 +28,15 @@ Modular code and static file management
 ![alt text](/personal-portfolio//app/static/images/image.png)
 
 Step - 1
-Install Flask
+Install Flask :-
 pip install Flask
 
 Step - 2
-Freeze requiremnts file
+Freeze requiremnts file :-
 pip freeze > requirements.txt
 
 Step - 3
-Run
+Run :-
 python run.py
 
 📬 Contact
