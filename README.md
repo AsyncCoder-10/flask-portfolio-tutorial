@@ -29,7 +29,7 @@ Modular code and static file management
 
 Step - 1
 Install Flask
-1.pip install Flask
+pip install Flask
 
 Step - 2
 Freeze requiremnts file
