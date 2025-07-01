@@ -27,5 +27,17 @@ Modular code and static file management
 
 ![alt text](/personal-portfolio//app/static/images/image.png)
 
+Step - 1
+Install Flask
+1.pip install Flask
+
+Step - 2
+Freeze requiremnts file
+pip freeze > requirements.txt
+
+Step - 3
+Run
+python run.py
+
 📬 Contact
 If you have any questions or want to collaborate, feel free to reach out via the Contact form on the site or [anshu.engg07@gmail.com].
