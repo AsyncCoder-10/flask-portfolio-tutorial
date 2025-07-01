@@ -1,0 +1,23 @@
+{% extends 'base.html' %} {% block title %}Home - Anshuman Behera{% endblock %}
+{% block content %}
+<section class="home-layout reveal">
+  <div class="hero-heading">💫 Hey there, I'm Anshuman Behera!</div>
+  <div class="profile-photo">
+    <img
+      src="{{ url_for('static', filename='/images/profile.jpg') }}"
+      alt="Anshuman Behera"
+    />
+  </div>
+  <div class="intro-text">
+    <div class="profile-lines">
+      <p>🎓 M.Tech in Artificial Intelligence & Machine Learning</p>
+      <p>🧠 AI Engineer (Frontend Integration) Aspirant</p>
+      <p>💻 Blending smart AI systems with seamless frontend experiences</p>
+    </div>
+    <div class="cta-buttons">
+      <a href="/projects" class="btn">View Projects</a>
+      <a href="/contact" class="btn-secondary">Contact Me</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

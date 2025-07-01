@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}My Portfolio{% endblock %}</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="{{ url_for('main.home') }}">Home</a>
+      <a href="{{ url_for('main.about') }}">About</a>
+      <a href="{{ url_for('main.projects') }}">Projects</a>
+      <a href="{{ url_for('main.contact') }}">Contact</a>
+      <button id="theme-toggle">🌙</button>
+    </nav>
+    <main>{% block content %}{% endblock %}</main>
+    <script>
+      const toggleBtn = document.getElementById("theme-toggle");
+      toggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        toggleBtn.textContent = document.body.classList.contains("dark-mode")
+          ? "☀️"
+          : "🌙";
+      });
+    </script>
+    <script>
+      const phrases = [
+        "AI + Frontend Developer",
+        "React & Flask Engineer",
+        "Building Smart User Interfaces",
+      ];
+      let i = 0,
+        j = 0,
+        isDeleting = false;
+
+      function type() {
+        const typingEl = document.getElementById("typing");
+        const current = phrases[i];
+        typingEl.textContent = current.substring(0, j);
+
+        if (!isDeleting && j < current.length) {
+          j++;
+        } else if (isDeleting && j > 0) {
+          j--;
+        } else if (j === current.length) {
+          isDeleting = true;
+        } else {
+          isDeleting = false;
+          i = (i + 1) % phrases.length;
+        }
+
+        setTimeout(type, isDeleting ? 50 : 100);
+      }
+
+      type();
+    </script>
+    <script>
+      function revealOnScroll() {
+        const reveals = document.querySelectorAll(".reveal");
+        for (const el of reveals) {
+          const windowHeight = window.innerHeight;
+          const elementTop = el.getBoundingClientRect().top;
+          const visiblePoint = 100;
+
+          if (elementTop < windowHeight - visiblePoint) {
+            el.classList.add("active");
+          }
+        }
+      }
+
+      window.addEventListener("scroll", revealOnScroll);
+      window.addEventListener("load", revealOnScroll); // trigger on load too
+    </script>
+  </body>
+</html>

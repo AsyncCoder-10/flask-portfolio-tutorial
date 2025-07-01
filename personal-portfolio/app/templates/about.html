@@ -1,0 +1,39 @@
+{% extends 'base.html' %} {% block title %}About - Anshuman Behera{% endblock %}
+{% block content %}
+
+<section class="about-layout reveal">
+  <div class="about-photo">
+    <img
+      src="{{ url_for('static', filename='/images/profile.jpg') }}"
+      alt="Anshuman Behera"
+    />
+  </div>
+
+  <div class="about-text">
+    <h2>👋 About Me</h2>
+    <p>
+      I’m <strong>Anshuman Behera</strong>, a passionate developer blending
+      smart AI systems with seamless frontend experiences. I'm currently
+      pursuing my
+      <strong>M.Tech in Artificial Intelligence & Machine Learning</strong> and
+      aiming to become an AI Solutions Engineer.
+    </p>
+
+    <p>
+      With experience in <strong>React</strong>, <strong>Flask</strong>, and
+      <strong>OpenAI integrations</strong>, I enjoy creating intuitive,
+      intelligent web applications.
+    </p>
+
+    <h3>💡 Interests & Skills</h3>
+    <ul class="skills-list">
+      <li>⚡ AI + Frontend Integration</li>
+      <li>🧠 Natural Language Processing</li>
+      <li>💻 Full Stack Projects (React + Flask)</li>
+      <li>📊 Data Visualization</li>
+      <li>🎨 UI/UX Design Principles</li>
+    </ul>
+  </div>
+</section>
+
+{% endblock %}

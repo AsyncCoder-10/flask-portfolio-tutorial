@@ -1,0 +1,20 @@
+[
+  {
+    "title": "AI Chatbot App",
+    "description": "A chatbot built using React and OpenAI APIs.",
+    "technologies": ["React", "Flask", "OpenAI API"],
+    "link": "https://github.com/yourusername/ai-chatbot"
+  },
+  {
+    "title": "To-Do List App",
+    "description": "A task management app with Flask and SQLite.",
+    "technologies": ["Flask", "SQLite"],
+    "link": "https://github.com/yourusername/todo-app"
+  },
+  {
+    "title": "Restaurant Website",
+    "description": "Static restaurant site using Angular 19 and JSON server.",
+    "technologies": ["Angular", "JSON Server"],
+    "link": "https://github.com/yourusername/restaurant-site"
+  }
+]
